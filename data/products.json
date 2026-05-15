@@ -1,0 +1,255 @@
+{
+  "stores": ["Carrefour", "Coto", "Jumbo", "Día", "Walmart"],
+  "products": [
+    {
+      "id": "avena",
+      "name": "Avena arrollada",
+      "searchTerm": "avena arrollada",
+      "unit": "100g",
+      "description": "Cereal de bajo costo y alta densidad calórica. Base ideal para desayunos proteicos con lenta absorción.",
+      "imageUrl": "",
+      "macros": { "calories": 389, "protein": 17, "carbs": 66, "fat": 7 },
+      "prices": { "Carrefour": 320, "Coto": 295, "Jumbo": 340, "Día": 280, "Walmart": 310 }
+    },
+    {
+      "id": "banana",
+      "name": "Banana",
+      "searchTerm": "banana",
+      "unit": "100g",
+      "description": "Fruta energética rica en potasio y carbohidratos de rápida absorción. Ideal pre-entrenamiento.",
+      "imageUrl": "",
+      "macros": { "calories": 89, "protein": 1, "carbs": 23, "fat": 0 },
+      "prices": { "Carrefour": 280, "Coto": 260, "Jumbo": 300, "Día": 250, "Walmart": 270 }
+    },
+    {
+      "id": "manzana",
+      "name": "Manzana",
+      "searchTerm": "manzana",
+      "unit": "100g",
+      "description": "Rica en fibra soluble y antioxidantes. Snack natural de bajo costo y larga vida útil.",
+      "imageUrl": "",
+      "macros": { "calories": 52, "protein": 0, "carbs": 14, "fat": 0 },
+      "prices": { "Carrefour": 320, "Coto": 300, "Jumbo": 350, "Día": 290, "Walmart": 310 }
+    },
+    {
+      "id": "lentejas",
+      "name": "Lentejas",
+      "searchTerm": "lentejas secas",
+      "unit": "100g",
+      "description": "La fuente de proteína vegetal más económica del plan. Alta en hierro, fibra y folato. No necesitan remojo.",
+      "imageUrl": "",
+      "macros": { "calories": 353, "protein": 25, "carbs": 60, "fat": 1 },
+      "prices": { "Carrefour": 450, "Coto": 420, "Jumbo": 490, "Día": 390, "Walmart": 430 }
+    },
+    {
+      "id": "garbanzo",
+      "name": "Garbanzo",
+      "searchTerm": "garbanzos secos",
+      "unit": "100g",
+      "description": "Legumbre versátil con alto contenido de proteína y fibra saciante. Base del hummus y curries.",
+      "imageUrl": "",
+      "macros": { "calories": 364, "protein": 19, "carbs": 61, "fat": 6 },
+      "prices": { "Carrefour": 480, "Coto": 450, "Jumbo": 510, "Día": 420, "Walmart": 460 }
+    },
+    {
+      "id": "porotos-negros",
+      "name": "Porotos negros",
+      "searchTerm": "porotos negros",
+      "unit": "100g",
+      "description": "Legumbre económica y alta en proteína vegetal, antioxidantes y hierro. Excelente relación costo/proteína.",
+      "imageUrl": "",
+      "macros": { "calories": 341, "protein": 22, "carbs": 63, "fat": 1 },
+      "prices": { "Carrefour": 420, "Coto": 400, "Jumbo": 450, "Día": 380, "Walmart": 410 }
+    },
+    {
+      "id": "arroz-integral",
+      "name": "Arroz integral",
+      "searchTerm": "arroz integral",
+      "unit": "100g",
+      "description": "Cereal de lenta absorción con más fibra y nutrientes que el arroz blanco. Carbohidrato base de bajo costo.",
+      "imageUrl": "",
+      "macros": { "calories": 370, "protein": 8, "carbs": 77, "fat": 3 },
+      "prices": { "Carrefour": 350, "Coto": 330, "Jumbo": 370, "Día": 310, "Walmart": 340 }
+    },
+    {
+      "id": "quinoa",
+      "name": "Quinoa",
+      "searchTerm": "quinoa",
+      "unit": "100g",
+      "description": "Única semilla que contiene todos los aminoácidos esenciales. La proteína vegetal más completa disponible.",
+      "imageUrl": "",
+      "macros": { "calories": 368, "protein": 14, "carbs": 64, "fat": 6 },
+      "prices": { "Carrefour": 950, "Coto": 900, "Jumbo": 1050, "Día": 870, "Walmart": 920 }
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu firme",
+      "searchTerm": "tofu firme",
+      "unit": "100g",
+      "description": "Proteína completa de soja con todos los aminoácidos. Absorbe los sabores de la cocción. Versátil en texturas.",
+      "imageUrl": "",
+      "macros": { "calories": 76, "protein": 8, "carbs": 2, "fat": 4 },
+      "prices": { "Carrefour": 850, "Coto": 800, "Jumbo": 920, "Día": 780, "Walmart": 830 }
+    },
+    {
+      "id": "tempeh",
+      "name": "Tempeh",
+      "searchTerm": "tempeh",
+      "unit": "100g",
+      "description": "Soja fermentada con más proteína que el tofu y probióticos naturales. Textura firme ideal para saltear.",
+      "imageUrl": "",
+      "macros": { "calories": 192, "protein": 20, "carbs": 8, "fat": 11 },
+      "prices": { "Carrefour": 1200, "Coto": 1150, "Jumbo": 1300, "Día": 1100, "Walmart": 1180 }
+    },
+    {
+      "id": "espinaca",
+      "name": "Espinaca",
+      "searchTerm": "espinaca",
+      "unit": "100g",
+      "description": "Verdura de hoja muy nutritiva: hierro, calcio, vitaminas A y C. De las más económicas en relación a nutrientes.",
+      "imageUrl": "",
+      "macros": { "calories": 23, "protein": 3, "carbs": 4, "fat": 0 },
+      "prices": { "Carrefour": 280, "Coto": 260, "Jumbo": 310, "Día": 240, "Walmart": 270 }
+    },
+    {
+      "id": "zanahoria",
+      "name": "Zanahoria",
+      "searchTerm": "zanahoria",
+      "unit": "100g",
+      "description": "Rica en betacarotenos y vitamina A. Muy económica, larga vida útil y versátil en cocina.",
+      "imageUrl": "",
+      "macros": { "calories": 41, "protein": 1, "carbs": 10, "fat": 0 },
+      "prices": { "Carrefour": 180, "Coto": 160, "Jumbo": 200, "Día": 150, "Walmart": 170 }
+    },
+    {
+      "id": "tomate",
+      "name": "Tomate",
+      "searchTerm": "tomates",
+      "unit": "100g",
+      "description": "Fuente de licopeno y vitamina C. Base de salsas y ensaladas. Bajo en calorías y económico.",
+      "imageUrl": "",
+      "macros": { "calories": 18, "protein": 1, "carbs": 4, "fat": 0 },
+      "prices": { "Carrefour": 320, "Coto": 300, "Jumbo": 350, "Día": 280, "Walmart": 310 }
+    },
+    {
+      "id": "batata",
+      "name": "Batata",
+      "searchTerm": "batata",
+      "unit": "100g",
+      "description": "Carbohidrato complejo con vitaminas A y C. Más nutritiva y saciante que la papa blanca.",
+      "imageUrl": "",
+      "macros": { "calories": 86, "protein": 2, "carbs": 20, "fat": 0 },
+      "prices": { "Carrefour": 220, "Coto": 200, "Jumbo": 240, "Día": 190, "Walmart": 210 }
+    },
+    {
+      "id": "brocoli",
+      "name": "Brócoli",
+      "searchTerm": "brocoli",
+      "unit": "100g",
+      "description": "El vegetal con más proteína relativa entre las verduras. Alto en vitamina C, calcio y antioxidantes.",
+      "imageUrl": "",
+      "macros": { "calories": 34, "protein": 3, "carbs": 7, "fat": 0 },
+      "prices": { "Carrefour": 380, "Coto": 350, "Jumbo": 420, "Día": 330, "Walmart": 370 }
+    },
+    {
+      "id": "leche-soja",
+      "name": "Leche de soja",
+      "searchTerm": "leche soja",
+      "unit": "100ml",
+      "description": "Bebida vegetal con el mejor balance proteico entre las leches vegetales. Fuente de calcio y vitamina D.",
+      "imageUrl": "",
+      "macros": { "calories": 33, "protein": 3, "carbs": 2, "fat": 2 },
+      "prices": { "Carrefour": 650, "Coto": 620, "Jumbo": 700, "Día": 590, "Walmart": 640 }
+    },
+    {
+      "id": "manteca-mani",
+      "name": "Manteca de maní",
+      "searchTerm": "crema mani",
+      "unit": "100g",
+      "description": "Concentrado calórico y proteico de bajo costo. Ideal para agregar densidad a desayunos y snacks.",
+      "imageUrl": "",
+      "macros": { "calories": 588, "protein": 25, "carbs": 20, "fat": 50 },
+      "prices": { "Carrefour": 1400, "Coto": 1350, "Jumbo": 1500, "Día": 1300, "Walmart": 1380 }
+    },
+    {
+      "id": "semillas-chia",
+      "name": "Semillas de chía",
+      "searchTerm": "semillas chia",
+      "unit": "100g",
+      "description": "Rica en omega-3, fibra y proteína. Se expande en líquido formando un gel saciante. Alta densidad nutricional.",
+      "imageUrl": "",
+      "macros": { "calories": 486, "protein": 17, "carbs": 42, "fat": 31 },
+      "prices": { "Carrefour": 780, "Coto": 740, "Jumbo": 850, "Día": 710, "Walmart": 760 }
+    },
+    {
+      "id": "almendras",
+      "name": "Almendras",
+      "searchTerm": "almendras",
+      "unit": "100g",
+      "description": "Fruto seco con grasas monoinsaturadas saludables, proteína vegetal y vitamina E. Snack energético.",
+      "imageUrl": "",
+      "macros": { "calories": 579, "protein": 21, "carbs": 22, "fat": 50 },
+      "prices": { "Carrefour": 2200, "Coto": 2100, "Jumbo": 2400, "Día": 1980, "Walmart": 2150 }
+    },
+    {
+      "id": "pan-integral",
+      "name": "Pan integral",
+      "searchTerm": "pan integral",
+      "unit": "100g",
+      "description": "Carbohidrato de lenta absorción con más fibra y nutrientes que el pan blanco. Base de desayunos rápidos.",
+      "imageUrl": "",
+      "macros": { "calories": 247, "protein": 9, "carbs": 48, "fat": 3 },
+      "prices": { "Carrefour": 600, "Coto": 570, "Jumbo": 650, "Día": 540, "Walmart": 580 }
+    },
+    {
+      "id": "pasta-integral",
+      "name": "Pasta integral",
+      "searchTerm": "fideos integrales",
+      "unit": "100g",
+      "description": "Carbohidrato complejo de bajo costo y fácil preparación. Base de platos abundantes con alto volumen.",
+      "imageUrl": "",
+      "macros": { "calories": 352, "protein": 13, "carbs": 71, "fat": 2 },
+      "prices": { "Carrefour": 420, "Coto": 390, "Jumbo": 460, "Día": 370, "Walmart": 410 }
+    },
+    {
+      "id": "palta",
+      "name": "Palta",
+      "searchTerm": "palta",
+      "unit": "100g",
+      "description": "Rica en grasas monoinsaturadas saludables y potasio. La fuente de grasa vegetal más densa y saciante.",
+      "imageUrl": "",
+      "macros": { "calories": 160, "protein": 2, "carbs": 9, "fat": 15 },
+      "prices": { "Carrefour": 680, "Coto": 640, "Jumbo": 750, "Día": 610, "Walmart": 660 }
+    },
+    {
+      "id": "aceite-oliva",
+      "name": "Aceite de oliva",
+      "searchTerm": "aceite oliva",
+      "unit": "100ml",
+      "description": "Fuente concentrada de grasas monoinsaturadas antiinflamatorias. Usar en cantidades pequeñas para cocinar.",
+      "imageUrl": "",
+      "macros": { "calories": 884, "protein": 0, "carbs": 0, "fat": 100 },
+      "prices": { "Carrefour": 1800, "Coto": 1700, "Jumbo": 1950, "Día": 1650, "Walmart": 1750 }
+    },
+    {
+      "id": "harina-garbanzo",
+      "name": "Harina de garbanzo",
+      "searchTerm": "harina garbanzo",
+      "unit": "100g",
+      "description": "Alternativa sin gluten con alta proteína vegetal. Versátil para tortillas, rebozados y bases de pizza.",
+      "imageUrl": "",
+      "macros": { "calories": 387, "protein": 22, "carbs": 58, "fat": 6 },
+      "prices": { "Carrefour": 520, "Coto": 490, "Jumbo": 560, "Día": 470, "Walmart": 510 }
+    },
+    {
+      "id": "pure-tomate",
+      "name": "Puré de tomate",
+      "searchTerm": "pure tomate",
+      "unit": "100g",
+      "description": "Base económica para salsas y guisos. Fuente concentrada de licopeno antioxidante. Larga vida útil.",
+      "imageUrl": "",
+      "macros": { "calories": 38, "protein": 2, "carbs": 8, "fat": 0 },
+      "prices": { "Carrefour": 180, "Coto": 165, "Jumbo": 200, "Día": 155, "Walmart": 175 }
+    }
+  ]
+}

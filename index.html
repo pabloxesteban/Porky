@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porky — Planificador de Comidas Veganas</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#22c55e" />
+
+  <!-- iOS / Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Porky" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- General mobile -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Porky" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="logo.png" class="logo-img" alt="Porky" />
+        <span class="logo-text">Porky</span>
+      </div>
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Progreso">
+        <span class="step" data-step="setup">Objetivos</span>
+        <span class="sep">›</span>
+        <span class="step" data-step="plan">Plan semanal</span>
+        <span class="sep">›</span>
+        <span class="step" data-step="shopping">Lista de compras</span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Toast de notificación flotante -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <main class="app-main">
+
+    <!-- ===== VISTA 1: SETUP ===== -->
+    <section id="view-setup" class="view active">
+      <div class="setup-card">
+
+        <div class="setup-logo">
+          <img src="logo.png" alt="Porky" class="setup-logo-img" />
+        </div>
+
+        <h1>Armá tu plan vegano semanal</h1>
+        <p class="subtitle">Ingresá tus objetivos diarios y presupuesto. La app genera tu plan y te dice dónde comprar más barato.</p>
+
+        <form id="form-setup" novalidate>
+
+          <fieldset>
+            <legend>Objetivos nutricionales diarios</legend>
+
+            <div class="input-group">
+              <label for="input-calories">Calorías</label>
+              <div class="input-with-unit">
+                <input type="number" id="input-calories" name="calories" min="1000" max="5000" value="2000" required />
+                <span class="unit">kcal</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="input-protein">Proteínas</label>
+              <div class="input-with-unit">
+                <input type="number" id="input-protein" name="protein" min="20" max="300" value="80" required />
+                <span class="unit">g</span>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="input-carbs">Carbohidratos</label>
+              <div class="input-with-unit">
+                <input type="number" id="input-carbs" name="carbs" min="50" max="600" value="250" required />
+                <span class="unit">g</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Presupuesto</legend>
+
+            <div class="budget-type-selector">
+              <label class="radio-pill">
+                <input type="radio" name="budget-type" value="weekly" checked />
+                <span>Por semana</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="budget-type" value="daily" />
+                <span>Por día</span>
+              </label>
+            </div>
+
+            <div class="input-group">
+              <label for="input-budget">Monto</label>
+              <div class="input-with-unit">
+                <span class="unit prefix">$</span>
+                <input type="number" id="input-budget" name="budget" min="500" max="200000" value="15000" required />
+                <span class="unit" id="budget-unit-label">ARS/semana</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tiempo máximo de preparación</legend>
+            <div class="time-selector">
+              <label class="time-pill">
+                <input type="radio" name="prep-time" value="15" />
+                <span>⚡ Hasta 15 min</span>
+              </label>
+              <label class="time-pill">
+                <input type="radio" name="prep-time" value="30" checked />
+                <span>🕐 Hasta 30 min</span>
+              </label>
+              <label class="time-pill">
+                <input type="radio" name="prep-time" value="999" />
+                <span>🍳 Sin límite</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Modo del plan</legend>
+            <div class="mode-selector" role="radiogroup">
+
+              <label class="mode-card" data-mode="extreme">
+                <input type="radio" name="plan-mode" value="extreme" />
+                <div class="mode-icon">💰</div>
+                <div class="mode-name">Ahorro extremo</div>
+                <div class="mode-desc">Máxima proteína al menor costo. Repite comidas, prioriza legumbres.</div>
+              </label>
+
+              <label class="mode-card" data-mode="balanced">
+                <input type="radio" name="plan-mode" value="balanced" checked />
+                <div class="mode-icon">⚖️</div>
+                <div class="mode-name">Híbrido</div>
+                <div class="mode-desc">Balance entre costo y variedad. La opción más práctica.</div>
+              </label>
+
+              <label class="mode-card" data-mode="premium">
+                <input type="radio" name="plan-mode" value="premium" />
+                <div class="mode-icon">✨</div>
+                <div class="mode-name">Todos los gustos</div>
+                <div class="mode-desc">Variedad máxima, sin repetir comidas. Más creativo.</div>
+              </label>
+
+            </div>
+          </fieldset>
+
+          <div id="form-error" class="form-error" hidden></div>
+
+          <button type="submit" class="btn-primary btn-large" id="btn-generate">
+            <span>Generar mi plan semanal</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== VISTA 2: PLAN SEMANAL ===== -->
+    <section id="view-plan" class="view" hidden>
+      <div class="plan-header">
+        <button class="btn-back" id="btn-back-setup">← Cambiar objetivos</button>
+        <div class="plan-summary" id="plan-summary"></div>
+        <button class="btn-primary" id="btn-go-shopping">Ver lista de compras →</button>
+      </div>
+
+      <div class="plan-actions">
+        <button class="btn-secondary" id="btn-regenerate">🔄 Regenerar plan</button>
+        <span id="save-indicator" class="save-indicator" hidden></span>
+      </div>
+
+      <div class="week-grid" id="week-grid" role="list" aria-label="Plan semanal">
+        <!-- JS rellena aquí -->
+      </div>
+
+      <div class="plan-totals" id="plan-totals"></div>
+    </section>
+
+    <!-- ===== VISTA 3: LISTA DE COMPRAS ===== -->
+    <section id="view-shopping" class="view" hidden>
+      <div class="plan-header">
+        <button class="btn-back" id="btn-back-plan">← Volver al plan</button>
+        <h2>Lista de compras optimizada</h2>
+        <div></div>
+      </div>
+
+      <div class="shopping-summary" id="shopping-summary"></div>
+
+      <div class="store-comparison" id="store-comparison"></div>
+
+      <div class="shopping-list-wrapper">
+        <table class="shopping-table" id="shopping-table">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th class="best-col">Mejor precio</th>
+              <th class="price-col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="shopping-tbody">
+            <!-- JS rellena aquí -->
+          </tbody>
+          <tfoot id="shopping-tfoot"></tfoot>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>Precios simulados · Argentina</p>
+  </footer>
+
+  <script src="js/planner.js"></script>
+  <script src="js/shopping.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Registro del service worker para PWA/offline -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+      });
+    }
+  </script>
+</body>
+</html>

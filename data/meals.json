@@ -1,0 +1,272 @@
+{
+  "meals": [
+    {
+      "id": "avena-banana",
+      "name": "Porridge de avena con banana",
+      "type": "breakfast",
+      "emoji": "🥣",
+      "prepTime": 8,
+      "ingredients": [
+        { "productId": "avena", "grams": 80 },
+        { "productId": "banana", "grams": 120 },
+        { "productId": "leche-soja", "grams": 200 },
+        { "productId": "semillas-chia", "grams": 15 }
+      ]
+    },
+    {
+      "id": "tostadas-mani",
+      "name": "Tostadas con manteca de maní y banana",
+      "type": "breakfast",
+      "emoji": "🍞",
+      "prepTime": 5,
+      "ingredients": [
+        { "productId": "pan-integral", "grams": 80 },
+        { "productId": "manteca-mani", "grams": 30 },
+        { "productId": "banana", "grams": 100 }
+      ]
+    },
+    {
+      "id": "smoothie-proteico",
+      "name": "Smoothie proteico de avena y maní",
+      "type": "breakfast",
+      "emoji": "🥤",
+      "prepTime": 5,
+      "ingredients": [
+        { "productId": "avena", "grams": 60 },
+        { "productId": "leche-soja", "grams": 300 },
+        { "productId": "manteca-mani", "grams": 25 },
+        { "productId": "banana", "grams": 100 }
+      ]
+    },
+    {
+      "id": "tostadas-palta",
+      "name": "Tostadas con palta y tomate",
+      "type": "breakfast",
+      "emoji": "🥑",
+      "prepTime": 5,
+      "ingredients": [
+        { "productId": "pan-integral", "grams": 100 },
+        { "productId": "palta", "grams": 80 },
+        { "productId": "tomate", "grams": 100 }
+      ]
+    },
+    {
+      "id": "chia-pudding",
+      "name": "Pudding de chía con manzana",
+      "type": "breakfast",
+      "emoji": "🍏",
+      "prepTime": 5,
+      "ingredients": [
+        { "productId": "semillas-chia", "grams": 40 },
+        { "productId": "leche-soja", "grams": 250 },
+        { "productId": "manzana", "grams": 150 }
+      ]
+    },
+    {
+      "id": "granola-almendras",
+      "name": "Avena con almendras y manzana",
+      "type": "breakfast",
+      "emoji": "🌰",
+      "prepTime": 8,
+      "ingredients": [
+        { "productId": "avena", "grams": 70 },
+        { "productId": "almendras", "grams": 30 },
+        { "productId": "manzana", "grams": 120 },
+        { "productId": "leche-soja", "grams": 150 }
+      ]
+    },
+    {
+      "id": "bowl-lentejas",
+      "name": "Bowl de lentejas con arroz integral",
+      "type": "lunch",
+      "emoji": "🥗",
+      "prepTime": 25,
+      "ingredients": [
+        { "productId": "lentejas", "grams": 150 },
+        { "productId": "arroz-integral", "grams": 100 },
+        { "productId": "espinaca", "grams": 80 },
+        { "productId": "zanahoria", "grams": 80 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "curry-garbanzo",
+      "name": "Curry de garbanzo con batata",
+      "type": "lunch",
+      "emoji": "🍛",
+      "prepTime": 35,
+      "ingredients": [
+        { "productId": "garbanzo", "grams": 180 },
+        { "productId": "batata", "grams": 200 },
+        { "productId": "pure-tomate", "grams": 100 },
+        { "productId": "espinaca", "grams": 60 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "bowl-tofu",
+      "name": "Bowl de tofu salteado con brócoli y arroz",
+      "type": "lunch",
+      "emoji": "🍱",
+      "prepTime": 15,
+      "ingredients": [
+        { "productId": "tofu", "grams": 200 },
+        { "productId": "brocoli", "grams": 150 },
+        { "productId": "arroz-integral", "grams": 120 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "pasta-vegana",
+      "name": "Pasta integral con salsa de tomate y lentejas",
+      "type": "lunch",
+      "emoji": "🍝",
+      "prepTime": 25,
+      "ingredients": [
+        { "productId": "pasta-integral", "grams": 150 },
+        { "productId": "lentejas", "grams": 100 },
+        { "productId": "pure-tomate", "grams": 150 },
+        { "productId": "espinaca", "grams": 60 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "quinoa-bowl",
+      "name": "Bowl de quinoa con verduras y palta",
+      "type": "lunch",
+      "emoji": "🫙",
+      "prepTime": 20,
+      "ingredients": [
+        { "productId": "quinoa", "grams": 120 },
+        { "productId": "palta", "grams": 80 },
+        { "productId": "tomate", "grams": 100 },
+        { "productId": "brocoli", "grams": 100 },
+        { "productId": "aceite-oliva", "grams": 8 }
+      ]
+    },
+    {
+      "id": "sopa-porotos",
+      "name": "Sopa de porotos negros con zanahoria y batata",
+      "type": "lunch",
+      "emoji": "🍲",
+      "prepTime": 40,
+      "ingredients": [
+        { "productId": "porotos-negros", "grams": 180 },
+        { "productId": "zanahoria", "grams": 100 },
+        { "productId": "batata", "grams": 150 },
+        { "productId": "pure-tomate", "grams": 80 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "tempeh-wok",
+      "name": "Wok de tempeh con brócoli y arroz",
+      "type": "lunch",
+      "emoji": "🥢",
+      "prepTime": 20,
+      "ingredients": [
+        { "productId": "tempeh", "grams": 150 },
+        { "productId": "brocoli", "grams": 150 },
+        { "productId": "arroz-integral", "grams": 100 },
+        { "productId": "zanahoria", "grams": 80 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "lentejas-estofado",
+      "name": "Estofado de lentejas con batata y tomate",
+      "type": "dinner",
+      "emoji": "🫕",
+      "prepTime": 30,
+      "ingredients": [
+        { "productId": "lentejas", "grams": 160 },
+        { "productId": "batata", "grams": 180 },
+        { "productId": "tomate", "grams": 150 },
+        { "productId": "espinaca", "grams": 80 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "tofu-plancha",
+      "name": "Tofu a la plancha con puré de batata y espinaca",
+      "type": "dinner",
+      "emoji": "🍽️",
+      "prepTime": 15,
+      "ingredients": [
+        { "productId": "tofu", "grams": 200 },
+        { "productId": "batata", "grams": 250 },
+        { "productId": "espinaca", "grams": 100 },
+        { "productId": "aceite-oliva", "grams": 12 }
+      ]
+    },
+    {
+      "id": "arroz-garbanzo",
+      "name": "Arroz con garbanzo salteado y verduras",
+      "type": "dinner",
+      "emoji": "🍚",
+      "prepTime": 25,
+      "ingredients": [
+        { "productId": "arroz-integral", "grams": 130 },
+        { "productId": "garbanzo", "grams": 150 },
+        { "productId": "zanahoria", "grams": 100 },
+        { "productId": "brocoli", "grams": 100 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "sopa-quinoa",
+      "name": "Sopa de quinoa con lentejas y espinaca",
+      "type": "dinner",
+      "emoji": "🥣",
+      "prepTime": 25,
+      "ingredients": [
+        { "productId": "quinoa", "grams": 100 },
+        { "productId": "lentejas", "grams": 120 },
+        { "productId": "espinaca", "grams": 100 },
+        { "productId": "zanahoria", "grams": 80 },
+        { "productId": "pure-tomate", "grams": 80 }
+      ]
+    },
+    {
+      "id": "pasta-garbanzo",
+      "name": "Pasta integral con crema de garbanzo y brócoli",
+      "type": "dinner",
+      "emoji": "🍝",
+      "prepTime": 25,
+      "ingredients": [
+        { "productId": "pasta-integral", "grams": 140 },
+        { "productId": "garbanzo", "grams": 130 },
+        { "productId": "brocoli", "grams": 120 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "tempeh-estofado",
+      "name": "Tempeh estofado con porotos y arroz",
+      "type": "dinner",
+      "emoji": "🫕",
+      "prepTime": 35,
+      "ingredients": [
+        { "productId": "tempeh", "grams": 140 },
+        { "productId": "porotos-negros", "grams": 130 },
+        { "productId": "arroz-integral", "grams": 100 },
+        { "productId": "pure-tomate", "grams": 100 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    },
+    {
+      "id": "harina-garbanzo-tortilla",
+      "name": "Tortilla de harina de garbanzo con palta y tomate",
+      "type": "dinner",
+      "emoji": "🫓",
+      "prepTime": 15,
+      "ingredients": [
+        { "productId": "harina-garbanzo", "grams": 120 },
+        { "productId": "palta", "grams": 100 },
+        { "productId": "tomate", "grams": 120 },
+        { "productId": "espinaca", "grams": 80 },
+        { "productId": "aceite-oliva", "grams": 10 }
+      ]
+    }
+  ]
+}

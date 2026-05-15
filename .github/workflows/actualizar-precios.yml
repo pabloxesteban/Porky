@@ -1,0 +1,33 @@
+name: Actualizar precios e imágenes
+
+on:
+  # Corre automáticamente todos los lunes a las 9am (hora Argentina)
+  schedule:
+    - cron: '0 12 * * 1'
+
+  # También se puede ejecutar manualmente desde la pestaña "Actions" en GitHub
+  workflow_dispatch:
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ejecutar script de actualización
+        run: node scripts/actualizar-precios.js
+
+      - name: Guardar cambios en el repositorio
+        run: |
+          git config --local user.email "porky-bot@users.noreply.github.com"
+          git config --local user.name "Porky Bot 🐷"
+          git add data/products.json
+          git diff --staged --quiet || git commit -m "🐷 Precios actualizados $(date +'%Y-%m-%d')"
+          git push
